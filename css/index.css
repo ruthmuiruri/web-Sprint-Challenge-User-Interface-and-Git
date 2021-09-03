@@ -34,6 +34,31 @@ body {
 ol, ul {
 	list-style: none;
 }
+
+header {
+    width:100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 1rem 1%;
+    font-size: 1rem;
+    background: white;
+}
+
+header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:black
+}
+
+
 blockquote, q {
 	quotes: none;
 }
@@ -56,10 +81,20 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+.Flexbox {
+    flex-direction: row;
+    width: 50rem;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: space-between;
+    Align-items:center;
+}
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    justify-content: flex-start;
 }
 
 p {
@@ -74,6 +109,7 @@ p {
 .top-content {
     display: flex;
     flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -83,6 +119,12 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+.middle-content {
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    display: inherit;
 }
 
 .middle-content {
@@ -101,15 +143,44 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.box1 {
+    background-color: teal;
+}
+.box2 {
+    background-color: gold;
+}
+.box3 {
+    background-color: cadetblue;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: crimson;
+}
+.box6 {
+    background-color: forestgreen;
+}
+.box7 {
+    background-color: darkorchid;
+}
+.box8 {
+    background-color: hotpink;
+}
+.box9 {
+    background-color: indigo;
+}
+.box10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -129,6 +200,10 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin:auto;
+    width: 80%;
+    display:flex
+
 }
 
 footer nav {
